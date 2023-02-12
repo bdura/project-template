@@ -30,8 +30,9 @@ jobs:
 
       - name: Set up Git
         run: |
-          git config user.name ${{ github.actor }}
-          git config user.email ${{ github.actor }}@users.noreply.github.com
+          git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
+          git config --global user.email "username@users.noreply.github.com"
+
       - name: Build documentation
         run: |
           git fetch origin gh-pages
