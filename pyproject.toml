@@ -1,0 +1,51 @@
+[tool.poetry]
+name = "project-template"
+version = "0.1.0"
+description = "A template proposal for Python projects. Ships with what I consider good practices."
+authors = ["Basile Dura <basile@bdura.me>"]
+readme = "README.md"
+packages = [{include = "project_template"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+ruff = "^0.0.245"
+mypy = "^1.0.0"
+
+
+[tool.poetry.group.docs.dependencies]
+mike = "^1.1.2"
+mkdocs-bibtex = "^2.8.12"
+mkdocs-gen-files = "^0.4.0"
+mkdocs-literate-nav = "^0.6.0"
+mkdocs-material = "^9.0.12"
+mkdocstrings = "^0.20.0"
+mkdocstrings-python = "^0.8.3"
+mkdocs-glightbox = "^0.3.1"
+
+
+[tool.mypy]
+plugins = [
+  "pydantic.mypy",
+  "sqlalchemy.ext.mypy.plugin"
+]
+
+[tool.isort]
+profile = "black"
+skip_glob = ["app/*"]
+
+[tool.pytest.ini_options]
+addopts = "--cov template --cov-report term --cov-report xml"
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "if TYPE_CHECKING:",
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
