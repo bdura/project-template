@@ -1,10 +1,9 @@
 [tool.poetry]
-name = "project-template"
+name = "template"
 version = "0.1.0"
 description = "A template proposal for Python projects. Ships with what I consider good practices."
 authors = ["Basile Dura <basile@bdura.me>"]
 readme = "README.md"
-packages = [{include = "project_template"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
