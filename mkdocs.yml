@@ -21,6 +21,7 @@ theme:
 
 nav:
   - index.md
+  - reading-list.md
   - How-to:
       - howto/index.md
       - howto/dependency-management.md
