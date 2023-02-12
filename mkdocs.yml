@@ -25,6 +25,17 @@ nav:
   - How-to:
       - howto/index.md
       - howto/dependency-management.md
+  - Environment:
+      - environment/index.md
+      - IDE: environment/ide.md
+      - environment/git.md
+      - environment/zsh.md
+  - Python:
+      - python/index.md
+      - python/awesome.md
+      - python/documentation.md
+      - python/configuration.md
+      - python/reproducibility.md
   - Code Reference: reference/
   - changelog.md
   - roadmap.md
