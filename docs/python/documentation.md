@@ -50,3 +50,5 @@ Use the [`mkdocs-jupyter` library](https://github.com/danielfrg/mkdocs-jupyter).
     It's good practice to Git-ignore notebooks (`*.ipynb` files).
 
     You can still force Git to add an ignored file using the command `git add --force normally-ignored-file.ipynb`.
+
+\bibliography
