@@ -39,6 +39,8 @@ You can take this project's [configuration](https://github.com/bdura/project-tem
 
 See the [bibtex file](https://github.com/bdura/project-template/blob/main/docs/references.bib) and the [index](https://github.com/bdura/project-template/blob/main/docs/index.md?plain=1) for an example. See also the [dedicated configuration](https://github.com/bdura/project-template/blob/main/mkdocs.yml#L64).
 
+Another example : water consumption in France[@conso-eau].
+
 ### Using notebooks
 
 Use the [`mkdocs-jupyter` library](https://github.com/danielfrg/mkdocs-jupyter). See the [example](../examples/using-jupyter.ipynb).
