@@ -12,6 +12,6 @@ Features :
 - Lightning-fast linting with [Ruff](https://beta.ruff.rs/docs/)
 - Static type checking with [MyPy](https://mypy.readthedocs.io/en/stable/)
 
-I basically used the best practice from EDS-PDF[@edspdf], although I updated a few parts.
+I basically used the best practice from EDS-PDF[@edspdf], although I updated a few parts.[@conso-eau]
 
 \bibliography

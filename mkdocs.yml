@@ -18,6 +18,7 @@ theme:
     - navigation.instant
     - navigation.indexes
     - content.code.annotate
+    - content.code.copy
 
 nav:
   - index.md
@@ -69,6 +70,8 @@ plugins:
   - literate-nav:
       nav_file: SUMMARY.md
   - autorefs
+  - mkdocs-jupyter:
+      execute: false
   - mkdocstrings:
       handlers:
         python:
@@ -93,7 +96,11 @@ plugins:
 
 markdown_extensions:
   - admonition
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: vegalite
+          class: vegalite
+          format: !!python/name:mkdocs_charts_plugin.fences.fence_vegalite
   - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.snippets
